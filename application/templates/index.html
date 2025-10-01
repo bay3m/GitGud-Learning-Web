@@ -1,6 +1,34 @@
 {% extends "base.html" %}
 
 {% block body %}
-<h1>GITDUD</h1>
-<p>Brian, Bernard, Jose, Marla, Mackanzie, Petunia</p>
+    <section class="section_1">
+        <div class="header">
+            <div class="logo">GG</div>
+            <h2>GitGud</h2>
+
+            <nav class="nav_bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">test</a></li>
+                    <li><a href="#">test</a></li>
+                    <li><a href="#">test</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="section_1_content">
+            <div class="section_1_left_div">
+                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, magnam.</h2>
+
+                <h1>Lorem ipsum dolor sit.</h1>
+
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatibus exercitationem ut iste officiis asperiores ipsam corporis laboriosam voluptatem accusantium?</h2>
+            </div>
+
+            <div class="section_1_right_div">
+                <img class="section_1_right" src="{{ url_for('static', filename='images/teaching.jpeg') }}" alt="old man teaching">
+                <p class="img_source">Source: <a class="img_source_link" href="https://stanforddaily.com/2021/09/20/more-handouts-online-office-hours-professors-innovate-after-distance-learning/">Image from Pinterest</a></p>
+            </div>
+        </div>
+    </section>
 {% endblock %}
