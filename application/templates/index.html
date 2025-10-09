@@ -1,34 +1,60 @@
 {% extends "base.html" %}
 
 {% block body %}
-    <section class="section_1">
-        <div class="header">
-            <div class="logo">GG</div>
-            <h2>GitGud</h2>
+    <section id="#section1" class="section_1">
+        <header class="header">
+            <!-- <div class="logo">GG</div> -->
+            <!-- <h2>GitGud</h2> -->
 
             <nav class="nav_bar">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">test</a></li>
-                    <li><a href="#">test</a></li>
-                    <li><a href="#">test</a></li>
+                <h2>
+                    <a href="#section1">GitGud</a>
+                </h2>
+                <ul class="tooltip">
+                    <li><a href="#">Project</a></li>
+                    <span class="tooltiptext">Click Here to See our Project</span>
                 </ul>
             </nav>
-        </div>
+        </header>
+
+        <div class="border"></div>
 
         <div class="section_1_content">
             <div class="section_1_left_div">
-                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, magnam.</h2>
-
-                <h1>Lorem ipsum dolor sit.</h1>
-
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatibus exercitationem ut iste officiis asperiores ipsam corporis laboriosam voluptatem accusantium?</h2>
+                <h1>Hardware and Behavioural AI</h1>
+                <a href="#section2" class="down-arrow">🔎 Learn More 🔍</a>
             </div>
-
-            <div class="section_1_right_div">
+            
+            <!-- <div class="section_1_right_div">
                 <img class="section_1_right" src="{{ url_for('static', filename='images/teaching.jpeg') }}" alt="old man teaching">
                 <p class="img_source">Source: <a class="img_source_link" href="https://stanforddaily.com/2021/09/20/more-handouts-online-office-hours-professors-innovate-after-distance-learning/">Image from Pinterest</a></p>
-            </div>
+            </div> -->
         </div>
+    </section>
+    <section id="section2" class="section_2">
+        <h1>Hardware</h1>
+        <div class="border" style="width: 100%; margin-top: 10px;"></div>
+        <div class="container">
+            <h1></h1>
+
+            <!-- <div class="section_2_left_div">
+                <h1>Hardware</h1>
+                <br>
+                <div class="hardware_content">
+                    <h2>Hardware refers to the physical parts of a computer or electronic system including sensible components on your device</h2>
+                    <h3>For Example :</h3>
+                    <ul>
+                        <li>Processors</li>
+                        <li>Storage Devices</li>
+                        <li>Input/Output Equipments</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section_2_right_div">
+                <h1>Behavioural AI</h1>
+            </div>
+        </div> -->
+        
     </section>
 {% endblock %}
