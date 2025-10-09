@@ -3,17 +3,14 @@
 {% block body %}
     <section id="#section1" class="section_1">
         <header class="header">
-            <!-- <div class="logo">GG</div> -->
-            <!-- <h2>GitGud</h2> -->
-
             <nav class="nav_bar">
                 <h2>
                     <a href="#section1">GitGud</a>
                 </h2>
-                <ul class="tooltip">
+                <!-- <ul class="tooltip">
                     <li><a href="#">Project</a></li>
                     <span class="tooltiptext">Click Here to See our Project</span>
-                </ul>
+                </ul> -->
             </nav>
         </header>
 
@@ -24,37 +21,65 @@
                 <h1>Hardware and Behavioural AI</h1>
                 <a href="#section2" class="down-arrow">🔎 Learn More 🔍</a>
             </div>
-            
-            <!-- <div class="section_1_right_div">
-                <img class="section_1_right" src="{{ url_for('static', filename='images/teaching.jpeg') }}" alt="old man teaching">
-                <p class="img_source">Source: <a class="img_source_link" href="https://stanforddaily.com/2021/09/20/more-handouts-online-office-hours-professors-innovate-after-distance-learning/">Image from Pinterest</a></p>
-            </div> -->
         </div>
     </section>
+
     <section id="section2" class="section_2">
         <h1>Hardware</h1>
         <div class="border" style="width: 100%; margin-top: 10px;"></div>
         <div class="container">
-            <h1></h1>
+            <div class="hardware_content">
+                <div class="hardware_text">
+                    <h3 style="font-size: 20px;">Hardware refers to the physical parts of a computer or electronic system including sensible components on your device</h3>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel slide">
 
-            <!-- <div class="section_2_left_div">
-                <h1>Hardware</h1>
-                <br>
-                <div class="hardware_content">
-                    <h2>Hardware refers to the physical parts of a computer or electronic system including sensible components on your device</h2>
-                    <h3>For Example :</h3>
-                    <ul>
-                        <li>Processors</li>
-                        <li>Storage Devices</li>
-                        <li>Input/Output Equipments</li>
-                    </ul>
+                    <div class="carousel-inner">
+
+                        {% for item in hardware %}
+                        <div class="carousel-item {% if loop.first %}active{% endif %}">
+
+                            <div class="carousel_item">
+                                <h4>{{ item.name }}</h4>
+                                
+                                <img src="{{ item.image }}" alt="{{ item.image_alt }}" style="width: 80%; height: auto;">
+                                
+                                <p class="img_source">
+                                    Image source: <a href="{{ item.image_src }}" class="img_source_link">Pinterest</a>
+                                </p>
+                                
+                                <p>{{ item.description }}</p>                              
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
-            
-            <div class="section_2_right_div">
-                <h1>Behavioural AI</h1>
+        </div>       
+    </section>
+
+    <section id="section3" class="section_3">
+        <h1>Behavioural AI</h1>
+        <div class="border" style="width: 100%; margin-top: 10px;"></div>
+    
+        <div class="container">
+            <div class="behavioural_content">
+                <h2>Behavioural AI is a type of artificial intelligence that focuses on understanding and replicating human behaviour through machine learning and data analysis</h2>
+                <h3>For Example :</h3>
+                <ul>
+                    <li>Chatbots</li>
+                    <li>Recommendation Systems</li>
+                    <li>Autonomous Vehicles</li>
+                </ul>
             </div>
-        </div> -->
-        
+        </div>
     </section>
 {% endblock %}
