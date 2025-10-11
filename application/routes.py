@@ -36,3 +36,47 @@ def index():
     ]
 
     return render_template("index.html", hardware=hardware)
+
+@main.route("/computer")
+def computer():
+    return render_template("computer.html")
+
+@main.route("/cpu")
+def cpu():
+    return render_template("cpu.html")
+
+@main.route("/ram")
+def ram():
+    return render_template("ram.html")
+
+@main.route("/storage")
+def storage():
+    return render_template("storage.html")
+
+@main.route("/graphic")
+def graphic():
+    return render_template("graphic.html")
+
+@main.route("/sound")
+def sound():
+    return render_template("sound.html")
+
+@main.route("/case")
+def case():
+    return render_template("case.html")
+
+@main.route("/monitor")
+def monitor():
+    return render_template("monitor.html")
+
+@main.route("/mouse")
+def mouse():
+    return render_template("mouse.html")
+
+@main.route("/keyboard")
+def keyboard():
+    return render_template("keyboard.html")
+
+@main.route("/speaker")
+def speaker():
+    return render_template("speaker.html")

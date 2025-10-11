@@ -227,6 +227,7 @@ section.section_2 > div.container {
 }
 div.hardware_content {
     height: 100%;
+    margin-top: 20px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -239,8 +240,19 @@ div.hardware_text {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: lighter;
+}
+
+a.highlight {
+    color: slateblue;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a.highlight:hover {
+    color: lightblue;
+    text-decoration: underline;
 }
 
 /* Section 3 ----------------------------------------------------------------------------------------------- */
