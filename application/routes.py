@@ -80,3 +80,11 @@ def keyboard():
 @main.route("/speaker")
 def speaker():
     return render_template("speaker.html")
+
+@main.route("/software")
+def software():
+    return render_template("software.html")
+
+@main.route("/motherboard")
+def motherboard():
+    return render_template("motherboard.html")

@@ -1,20 +1,7 @@
 {% extends "base.html" %}
 
 {% block body %}
-    <section id="#section1" class="section_1">
-        <header class="header">
-            <nav class="nav_bar">
-                <h2>
-                    <a href="#section1">GitGud</a>
-                </h2>
-                <!-- <ul class="tooltip">
-                    <li><a href="#">Project</a></li>
-                    <span class="tooltiptext">Click Here to See our Project</span>
-                </ul> -->
-            </nav>
-        </header>
-
-        <div class="border"></div>
+    
 
         <div class="section_1_content">
             <div class="section_1_left_div">
@@ -31,27 +18,27 @@
         <div class="container">
             <div class="hardware_content">
                 <div class="hardware_text">
-                    <p class="hardware-text">
+                    <p>
                         Computer hardware includes the physical parts of a 
                         <a href="{{ url_for('main.computer') }}" class="highlight">computer</a>, such as the 
-                        <a href="/cpu" class="highlight">central processing unit</a> (CPU), 
-                        <a href="/ram" class="highlight">random-access memory</a> (RAM), 
-                        <a href="/motherboard" class="highlight">motherboard</a>, 
-                        <a href="/storage" class="highlight">computer data storage</a>, 
-                        <a href="/gpu" class="highlight">graphics card</a>, 
-                        <a href="/sound-card" class="highlight">sound card</a>, 
-                        and <a href="/case" class="highlight">computer case</a>. 
+                        <a href="{{ url_for('main.cpu') }}" class="highlight">central processing unit</a> (CPU), 
+                        <a href="{{ url_for('main.ram') }}" class="highlight">random-access memory</a> (RAM), 
+                        <a href="{{ url_for('main.motherboard') }}" class="highlight">motherboard</a>, 
+                        <a href="{{ url_for('main.storage') }}" class="highlight">computer data storage</a>, 
+                        <a href="{{ url_for('main.graphic') }}" class="highlight">graphics card</a>, 
+                        <a href="{{ url_for('main.sound') }}" class="highlight">sound card</a>, 
+                        and <a href="{{ url_for('main.case') }}" class="highlight">computer case</a>. 
                         It includes external devices such as a 
-                        <a href="/monitor" class="highlight">monitor</a>, 
-                        <a href="/mouse" class="highlight">mouse</a>, 
-                        <a href="/keybaord" class="highlight">keyboard</a>, and 
-                        <a href="/speaker" class="highlight">speakers</a>.
+                        <a href="{{ url_for('main.monitor') }}" class="highlight">monitor</a>, 
+                        <a href="{{ url_for('main.mouse') }}" class="highlight">mouse</a>, 
+                        <a href="{{ url_for('main.keyboard') }}" class="highlight">keyboard</a>, and 
+                        <a href="{{ url_for('main.speaker') }}r" class="highlight">speakers</a>.
                     </p>
                     <br>
                     <p class="software-text">
-                        By contrast, <a href="/software" class="highlight">software</a> is a set of written instructions that can be stored and run by hardware. 
+                        By contrast, <a href="{{ url_for('main.software') }}" class="highlight">software</a> is a set of written instructions that can be stored and run by hardware. 
                         Hardware derived its name from the fact it is hard or rigid with respect to changes, whereas 
-                        <a href="/software" class="highlight">software</a> is soft because it is easy to change.
+                        software is soft because it is easy to change.
                     </p>
                     <br>
                     <p>Hardware is typically directed by the software to execute any command or instruction. A combination of hardware and software forms a usable computing system, although other systems exist with only hardware.</p>
