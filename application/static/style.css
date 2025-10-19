@@ -28,7 +28,7 @@ a {
 
 .img_source {
     font-size: 15px;
-    color: var(--color4);
+    /* color: var(--color4); */
     font-style: italic;
 }
 
@@ -47,27 +47,37 @@ a {
     width: 100%;
 }
 
-div.carousel_item{
-    width: 50%;
+.carousel-control-prev {
+    background-color: black;
     height: 90%;
-    background-color: var(--color2);
+}
+
+.carousel-control-next {
+    background-color: black;
+    height: 90%;
+}
+
+div.carousel_item{
+    width: 60%;
+    height: 90%;
+    background-color: rgb(246, 204, 204);
     margin: auto; 
     display: flex; 
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
     border-radius: 10px;
-    padding: 10px;
+    padding: 50px;
 }
 
 .img_source {
     font-size: 15px;
-    color: var(--color4);
+    /* color: var(--color4); */
     font-style: italic;
 }
 
 .img_source_link {
-    color: var(--color4);
+    /* color: var(--color4); */
     text-decoration: none;
 }
 
@@ -77,7 +87,9 @@ div.carousel_item{
     flex-direction: column;
     height: 100%;
     width: 100%;
-    background-color: #041322;
+    /* background-color: #041322; */
+    /* background-color: ; */
+    color: black;
 }
 
 header.header {
@@ -85,9 +97,9 @@ header.header {
     width: 100%;
     align-items: center;
     font-size: 30px;
-    color: var(--color4);
+    /* color: var(--color4); */
     margin: 20px 0px 10px;
-    color: #f0f6fc;
+    color: black;
 }
 
 nav.nav_bar {
@@ -101,10 +113,12 @@ nav.nav_bar > h2 {
     padding-right: 70vw;
     padding-left: 5vw;
     font-weight: lighter;
+    color: black;
 }
 
 nav.nav_bar > h2 > a {
-    color: var(--color4);
+    /* color: var(--color4); */
+    color: black;
 }
 
 .nav_bar > ul {
@@ -117,7 +131,7 @@ nav.nav_bar > h2 > a {
     
 }
 
-.tooltip {
+/* .tooltip {
     position: relative;
     display: inline-block;
 }
@@ -140,12 +154,12 @@ nav.nav_bar > h2 > a {
     font-size: 15px;
     font-weight: lighter;
     border: 1px solid white;
-}
+} */
 
-.tooltip:hover .tooltiptext {
+/* .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-}
+} */
 
 .nav_bar > ul > li {
     list-style: none;
@@ -155,13 +169,11 @@ nav.nav_bar > h2 > a {
 
 .nav_bar > ul > li > a {
     text-decoration: none;
-    color: var(--color4);
+    /* color: var(--color4); */
 }
 
-.border {
+div.border {
     width: 100vw;
-    height: 0.5px;
-    background-color: gray;
 }
 
 .section_1_content {
@@ -179,7 +191,7 @@ nav.nav_bar > h2 > a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: var(--color4);
+    /* color: var(--color4); */
     font-family: "Pixelify Sans", sans-serif;
     /* background-color: black;
     border-radius: 30px; */
@@ -194,7 +206,7 @@ nav.nav_bar > h2 > a {
     display: inline-block;
     font-size: 2rem;
     text-decoration: none;
-    color: var(--color4);
+    /* color: var(--color4); */
     transition: transform 0.3s;
     border-radius: 15px;
     /* width: 17%; */
@@ -209,13 +221,14 @@ nav.nav_bar > h2 > a {
 section.section_2 {
     width: 100vw;
     height: 100vh;
-    background-color: #041322;
-    color: var(--color4);
+    /* background-color: #041322; */
+    /* color: var(--color4); */
     display: flex;
     display: inline-block;
     padding-top: 4%;
     padding-left: 10%;
     padding-right: 10%;
+    font-weight: bold;
 }
 
 section.section_2 > div.container {
@@ -225,6 +238,7 @@ section.section_2 > div.container {
     padding-left: 30px;
     height: 80%;
 }
+
 div.hardware_content {
     height: 100%;
     margin-top: 20px;
@@ -260,8 +274,8 @@ a.highlight:hover {
 section.section_3 {
     width: 100vw;
     height: 100vh;
-    background-color: #041322;
-    color: var(--color4);
+    /* background-color: #041322; */
+    /* color: var(--color4); */
     display: flex;
     display: inline-block;
     padding-top: 8%;
@@ -273,5 +287,170 @@ section.section_3 > div.container {
     display: flex;
     column-gap: 20px;
     margin-top: 25px;
+    padding-left: 30px;
+}
+
+/* Wiki Section ----------------------------------------------------------------------------------------------- */
+
+.section_wiki {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #041322; */
+    /* color: var(--color4); */
+    display: flex;
+    display: inline-block;
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.wiki_title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wiki_back {
+    font-size: 2rem;
+    transition: transform 0.3s;
+    border-radius: 15px;
+    font-weight: 900;
+    color: black;
+}
+
+.wiki_back:hover {
+    transform: translateX(-5px);
+}
+
+.wiki_title > h1 {
+    font-size: 40px;
+}
+
+.wiki_container {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 25px;
+    padding-left: 30px;
+    height: 80%;
+}
+
+.wiki_content {
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.wiki_text {
+    width: 65%;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 18px;
+    /* font-weight: lighter; */
+}
+
+.wiki_text > p {
+    font-size: 18px;
+    font-weight: 0;
+}
+
+.wiki_image {
+    width: 33%;
+    height: 90%;
+    padding: 20px;
+    background-color: rgb(246, 204, 204);
+    border: 1px solid;
+    border-radius: 5px;
+    
+}
+
+.wiki_image > .computer_image {
+    width: 100%;
+    height: 60%;
+    background-image: url(images/computer.png);
+    background-size: cover;
+    /* background-color: red; */
+}
+
+.wiki_image > .cpu_image {
+    width: 67%;
+    height: 60%;
+    background-image: url(images/cpu.png);
+}
+
+.wiki_image > .ram_image {
+    width: 67%;
+    height: 60%;
+    background-image: url(images/cpu.png);
+}
+
+.wiki_image > .motherboard_image {
+    width: 70%;
+    height: 60%;
+    background-size: contain;
+    background-image: url(images/motherboard.jpg);
+}
+
+.wiki_image > .hdd_image {
+    width: 70%;
+    height: 60%;
+    background-size: contain;
+    background-image: url(images/hdd.jpg);
+}
+
+.wiki_image > .graphic_image {
+    width: 70%;
+    height: 60%;
+    background-size: contain;
+    background-image: url(images/graphic.jpg);
+}
+
+.wiki_image > .sound_image {
+    width: 70%;
+    height: 60%;
+    background-size: contain;
+    background-image: url(images/sound.png);
+}
+
+.wiki_image > .case_image {
+    width: 70%;
+    height: 60%;
+    background-size: contain;
+    background-image: url(images/case.jpg);
+}
+
+.wiki_image > .monitor_image {
+    width: 70%;
+    height: 60%;
+    background-size: contain;
+    background-image: url(images/monitor.png);
+}
+
+.wiki_image > .mouse_image {
+    width: 70%;
+    height: 60%;
+    background-size: contain;
+    background-image: url(images/mouse.jpg);
+}
+
+.wiki_image > .keyboard_image {
+    width: 70%;
+    height: 60%;
+    background-size: contain;
+    background-image: url(images/keyboard.jpeg);
+}
+
+.wiki_image > .speaker_image {
+    width: 70%;
+    height: 60%;
+    background-size: contain;
+    background-image: url(images/speaker.jpg);
+}
+
+.wiki_image_text {
     padding-left: 30px;
 }
