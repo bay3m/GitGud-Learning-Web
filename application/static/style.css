@@ -304,7 +304,25 @@ section.section_3 > div.container {
     padding-right: 10%;
 }
 
-.section_wiki > h1 {
+.wiki_title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wiki_back {
+    font-size: 2rem;
+    transition: transform 0.3s;
+    border-radius: 15px;
+    font-weight: 900;
+    color: black;
+}
+
+.wiki_back:hover {
+    transform: translateX(-5px);
+}
+
+.wiki_title > h1 {
     font-size: 40px;
 }
 
@@ -344,7 +362,7 @@ section.section_3 > div.container {
     width: 33%;
     height: 90%;
     padding: 20px;
-    background-color: gray;
+    background-color: rgb(246, 204, 204);
     border: 1px solid;
     border-radius: 5px;
     
@@ -356,6 +374,81 @@ section.section_3 > div.container {
     background-image: url(images/computer.png);
     background-size: cover;
     /* background-color: red; */
+}
+
+.wiki_image > .cpu_image {
+    width: 67%;
+    height: 60%;
+    background-image: url(images/cpu.png);
+}
+
+.wiki_image > .ram_image {
+    width: 67%;
+    height: 60%;
+    background-image: url(images/cpu.png);
+}
+
+.wiki_image > .motherboard_image {
+    width: 70%;
+    height: 60%;
+    background-size: contain;
+    background-image: url(images/motherboard.jpg);
+}
+
+.wiki_image > .hdd_image {
+    width: 70%;
+    height: 60%;
+    background-size: contain;
+    background-image: url(images/hdd.jpg);
+}
+
+.wiki_image > .graphic_image {
+    width: 70%;
+    height: 60%;
+    background-size: contain;
+    background-image: url(images/graphic.jpg);
+}
+
+.wiki_image > .sound_image {
+    width: 70%;
+    height: 60%;
+    background-size: contain;
+    background-image: url(images/sound.png);
+}
+
+.wiki_image > .case_image {
+    width: 70%;
+    height: 60%;
+    background-size: contain;
+    background-image: url(images/case.jpg);
+}
+
+.wiki_image > .monitor_image {
+    width: 70%;
+    height: 60%;
+    background-size: contain;
+    background-image: url(images/monitor.png);
+}
+
+.wiki_image > .mouse_image {
+    width: 70%;
+    height: 60%;
+    background-size: contain;
+    background-image: url(images/mouse.jpg);
+}
+
+.wiki_image > .keyboard_image {
+    width: 70%;
+    height: 60%;
+    background-size: contain;
+    background-image: url(images/keyboard.jpeg);
+}
+
+.wiki_image > .speaker_image {
+    width: 70%;
+    height: 60%;
+    background-size: contain;
+    background-image: url(images/speaker.jpg);
 }
 
 .wiki_image_text {
