@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block body %}
+<div class="quiz-home">
     <h2>Select a Quiz Topic</h2>
     <div class="topics-grid">
         {% for topic in topics %}
@@ -10,4 +11,5 @@
             </div>
         {% endfor %}
     </div>
+</div>
 {% endblock %}

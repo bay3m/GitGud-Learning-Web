@@ -39,7 +39,7 @@ def index():
 
 @main.route("/quizzes")
 def quizzes():
-    topics = ["cpu", "ram"]
+    topics = ["cpu", "ram", "basic computer knowledge"]
     
     return render_template("quiz_home.html", topics=topics)
 
