@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <h2>Select a Quiz Topic</h2>
+    <div class="topics-grid">
+        {% for topic in topics %}
+            <div class="topic-card">
+                <h4>{{ topic }}</h4>
+                <a href="#" class="btn btn-primary">Start Quiz</a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

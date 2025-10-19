@@ -110,7 +110,7 @@ nav.nav_bar {
 }
 
 nav.nav_bar > h2 {
-    padding-right: 70vw;
+    padding-right: 30vw;
     padding-left: 5vw;
     font-weight: lighter;
     color: black;
@@ -453,4 +453,23 @@ section.section_3 > div.container {
 
 .wiki_image_text {
     padding-left: 30px;
+}
+
+/* Quiz Section ----------------------------------------------------------------------------------------------- */
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+.topic-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    transition: 0.2s ease;
+}
+.topic-card:hover {
+    transform: translateY(-5px);
+    background-color: #e9ecef;
 }

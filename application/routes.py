@@ -37,6 +37,12 @@ def index():
 
     return render_template("index.html", hardware=hardware)
 
+@main.route("/quizzes")
+def quizzes():
+    topics = ["cpu", "ram"]
+    
+    return render_template("quiz_home.html", topics=topics)
+
 @main.route("/computer")
 def computer():
     return render_template("computer.html")
