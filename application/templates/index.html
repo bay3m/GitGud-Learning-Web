@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block body %}
-    <section id="#section1" class="section_1">
+    <section id="section1" class="section_1">
         <header class="header">
             <nav class="nav_bar">
                 <h2>
@@ -26,7 +26,16 @@
 
     <section id="section2" class="section_2">
         <br>
-        <h1>Hardware</h1>
+        <!-- <div class="wiki_back">
+            <a href="{{ url_for('main.index') }}#section1">←</a>
+        </div>
+        <h1>Hardware</h1> -->
+        <div class="wiki_title">
+            <div class="wiki_back">
+                <a href="#section1" style="text-decoration: none; color: black;">←</a>
+            </div>
+            <h1 style="margin-top: 0.4%; font-weight: 500;">Hardware</h1>
+        </div>
         <div class="border" style="width: 100%; margin-top: 5px;"></div>
         <div class="container">
             <div class="hardware_content">
@@ -90,19 +99,56 @@
         </div>       
     </section>
 
-    <section id="section3" class="section_3">
-        <h1>Behavioural AI</h1>
+    <section id="section3" class="section_2" style="width: 100%; font-weight: 490">
+        <h1 style="margin-top: 50px;">Behavioural AI</h1>
         <div class="border" style="width: 100%; margin-top: 10px;"></div>
     
         <div class="container">
-            <div class="behavioural_content">
-                <h2>Behavioural AI is a type of artificial intelligence that focuses on understanding and replicating human behaviour through machine learning and data analysis</h2>
-                <h3>For Example :</h3>
-                <ul>
-                    <li>Chatbots</li>
-                    <li>Recommendation Systems</li>
-                    <li>Autonomous Vehicles</li>
+            <div class="behavioural_content" style="width: 65%;">
+                <p>
+                    Behavioral AI is a branch of artificial intelligence (AI) that focuses on understanding, predicting, and responding to human behavior. It uses data from user interactions to personalize recommendations, detect threats, and adapt to changes in real time.
+                </p>
+                <p>
+                    Behavioral AI combines AI techniques and behavioral science to understand, predict, and respond to human actions and patterns. It helps organizations tackle evolving cyber threats, rising customer expectations, and large volumes of user data by learning normal behavior, detecting anomalies, and adapting in real time.
+                </p>
+                <p>
+                    This leads to more accurate threat detection, personalized experiences, and smarter decision-making across industries. For example, behavioral AI can detect unusual login behavior that may indicate a cyberattack and automatically trigger security measures.
+                </p>
+                <br>
+                <p>Behavioral AI is applied across various key areas, including:</p>
+                <ul style="margin-left: 35px;">
+                    <li>Personalized User Experiences: Tailors content, recommendations, and interfaces based on individual preferences and habits.</li>
+                    <li>Cybersecurity: Detects anomalies in user behavior to identify potential security threats, such as phishing or account takeovers.</li>
+                    <li>Customer Engagement: Enhances marketing strategies by predicting consumer needs and optimizing interactions.</li>
+                    <li>Fraud Prevention: Identifies unusual transaction patterns that may indicate fraudulent activities.</li>
                 </ul>
+                <p>
+                    These applications help users stay aware and use the right solutions to thwart AI attacks.
+                </p>
+                <br>
+                <p>Behavioral AI operates by analyzing data from user interactions and applying machine learning algorithms to identify patterns. Its core components include:</p>
+                <ul style="margin-left: 35px; width: 70%;">
+                    <li>Behavioral Data Collection: Data is gathered from user actions, such as clicks, keystrokes, or transaction histories, through applications or devices.</li>
+                    <li>Pattern Recognition: Machine learning models identify trends and deviations in behavior, enabling predictive analytics.</li>
+                    <li>Contextual Analysis: AI systems consider the context of actions to ensure accurate predictions and responses.</li>
+                    <li>Dynamic Adaptation: Behavioral AI continuously learns and updates its models as new data is collected, ensuring ongoing relevance.</li>
+                </ul>
+                <p>
+                    Together, these elements empower behavioral AI to evolve continuously, providing deeper insights and more effective responses tailored to changing user behaviors.
+                </p>
+                <br>
+                <p>
+                    Behavioral AI applications can be categorized based on their focus areas:
+                </p>
+                <ul>
+                    <li>Predictive Behavioral AI: Anticipates future actions by analyzing past behavior. For example, Netflix suggests movies based on your viewing history.</li>
+                    <li>Anomaly Detection: Flags unusual activity that could indicate cybersecurity threats, such as banks detecting fraudulent transactions outside a user’s normal spending patterns.</li>
+                    <li>Real-Time Behavioral AI: Adjusts instantly to user input, like adaptive learning platforms such as Duolingo, tailoring lessons based on your progress and mistakes.</li>
+                    <li>Emotion-Aware AI: Detects sentiment and emotional cues to respond empathetically, as seen in AI-powered customer support chatbots that adjust tone based on user frustration or satisfaction.</li>
+                </ul>
+                <p>Using behavioral AI, organizations can proactively secure systems, enhance user interactions, and stay ahead of evolving threats.</p>
+                <br>
+                <p>
             </div>
         </div>
     </section>
