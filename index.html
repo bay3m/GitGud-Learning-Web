@@ -1,13 +1,25 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Bebas+Neue&family=Bitcount+Prop+Single+Ink:wght@100..900&family=Gupter:wght@400;500;700&family=Instrument+Serif&family=Jacquard+12+Charted&family=Jersey+10&family=Pacifico&family=Pixelify+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>AI and Behaviourist AI</title>
+</head>
+<body>
 
-{% block body %}
     <section id="section1" class="section_1" style="justify-content: center; align-items: center;">
         <header class="main-header sticky-top">
             <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
                 <div class="container">
 
                     <a class="navbar-brand d-flex align-items-center" href="#">
-                        <img src="../static/images/profile.png" alt="Logo" height="50" class="me-2" style="border-radius: 50px;">
+                        <img src="static/images/profile.png" alt="Logo" height="50" class="me-2" style="border-radius: 50px;">
                         <span class="fw-bold" style="color:#002b5c; margin-left: 10px; font-weight: bolder">GitGud</span>
                     </a>
 
@@ -35,13 +47,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000">
             <div class="carousel-inner" style="width: 100%; margin-top: 50px; border-radius: 15px">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="../static/images/banner.png" alt="First slide">
+                    <img class="d-block w-100" src="static/images/banner.png" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="../static/images/banner1.png" alt="Second slide">
+                    <img class="d-block w-100" src="static/images/banner1.png" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="../static/images/banner2.png" alt="Third slide">
+                    <img class="d-block w-100" src="static/images/banner2.png" alt="Third slide">
                 </div>
             </div>
         </div>
@@ -82,8 +94,6 @@
         </div>
     </section>
 
-    </section>
-
     <section id="section2" class="section_2">
         <br>
         <!-- <div class="wiki_back">
@@ -102,19 +112,19 @@
                 <div class="hardware_text">
                     <p>
                         Computer hardware includes the physical parts of a 
-                        <a href="{{ url_for('main.computer') }}" class="highlight">computer</a>, such as the 
-                        <a href="{{ url_for('main.cpu') }}" class="highlight">central processing unit</a> (CPU), 
-                        <a href="{{ url_for('main.ram') }}" class="highlight">random-access memory</a> (RAM), 
-                        <a href="{{ url_for('main.motherboard') }}" class="highlight">motherboard</a>, 
-                        <a href="{{ url_for('main.storage') }}" class="highlight">computer data storage</a>, 
-                        <a href="{{ url_for('main.graphic') }}" class="highlight">graphics card</a>, 
-                        <a href="{{ url_for('main.sound') }}" class="highlight">sound card</a>, 
-                        and <a href="{{ url_for('main.case') }}" class="highlight">computer case</a>. 
+                        <a href="templates/computer.html" class="highlight">computer</a>, such as the 
+                        <a href="templates/cpu.html" class="highlight">central processing unit</a> (CPU), 
+                        <a href="templates/ram.html" class="highlight">random-access memory</a> (RAM), 
+                        <a href="templates/motherboard.html" class="highlight">motherboard</a>, 
+                        <a href="templates/storage.html" class="highlight">computer data storage</a>, 
+                        <a href="templates/graphic.html" class="highlight">graphics card</a>, 
+                        <a href="templates/sound.html" class="highlight">sound card</a>, 
+                        and <a href="templates/case.html" class="highlight">computer case</a>. 
                         It includes external devices such as a 
-                        <a href="{{ url_for('main.monitor') }}" class="highlight">monitor</a>, 
-                        <a href="{{ url_for('main.mouse') }}" class="highlight">mouse</a>, 
-                        <a href="{{ url_for('main.keyboard') }}" class="highlight">keyboard</a>, and 
-                        <a href="{{ url_for('main.speaker') }}" class="highlight">speakers</a>.
+                        <a href="templates/monitor.html" class="highlight">monitor</a>, 
+                        <a href="templates/mouse.html" class="highlight">mouse</a>, 
+                        <a href="templates/keyboard.html" class="highlight">keyboard</a>, and 
+                        <a href="templates/speaker.html" class="highlight">speakers</a>.
                     </p>
                     <br>
                     <p class="software-text">
@@ -127,24 +137,8 @@
                 </div>
                 <div id="carouselExampleIndicators" class="carousel slide" data-interval="2000">
 
-                    <div class="carousel-inner">
-
-                        {% for item in hardware %}
-                        <div class="carousel-item {% if loop.first %}active{% endif %}">
-
-                            <div class="carousel_item">
-                                <h4>{{ item.name }}</h4>
-                                
-                                <img src="{{ item.image }}" alt="{{ item.image_alt }}" style="width: 80%; height: auto;">
-                                
-                                <p class="img_source">
-                                    Image source: <a href="{{ item.image_src }}" class="img_source_link">Pinterest</a>
-                                </p>
-                                
-                                <p>{{ item.description }}</p>                              
-                            </div>
-                        </div>
-                        {% endfor %}
+                    <div class="carousel-inner" id="hardware_carousel">
+                        <!-- Displayed by main.js -->
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -212,4 +206,10 @@
             </div>
         </div>
     </section>
-{% endblock %}
+
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
