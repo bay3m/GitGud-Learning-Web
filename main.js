@@ -1,3 +1,4 @@
+// display carousel in index.html
 hardware_display_main = [
     {
         "name": "Motherboard",
@@ -27,18 +28,15 @@ hardware_display_main = [
         "image_alt" : "SSD Image",
         "description": "Fast storage device that holds your operating system, applications, and files."
     }
-]
-
-quiz_topics = ["cpu", "ram", "basic computer knowledge"]
-
+];
 document.addEventListener('DOMContentLoaded', () => {
     hardware_carousel_in_index = document.querySelector('#hardware_carousel');
-    console.log("Loaded");
+    // console.log("Loaded");
 
     hardware_display_main.forEach((item, index) => {
         const div = document.createElement('div');
         div.className = `carousel-item ${index == 0 ? 'active' : ''}`;
-        console.log(item);
+        // console.log(item);
 
         div.innerHTML = `
             <div class="carousel_item">
@@ -53,8 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>${ item.description }</p>                              
             </div>
         `;
-        console.log(div);
-        console.log(hardware_carousel_in_index);
+        // console.log(div);
+        // console.log(hardware_carousel_in_index);
         hardware_carousel_in_index.appendChild(div);
     });
 });

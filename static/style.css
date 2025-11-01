@@ -284,12 +284,10 @@ section.section_3 > div.container {
 
 .section_wiki {
     width: 100vw;
-    /* height: 100vh; */
+    min-height: 100vh;
     height: fit-content;
-    /* background-color: #041322; */
     background-color: var(--color1);
     color: var(--color4);
-    display: flex;
     display: inline-block;
     padding-top: 4%;
     padding-left: 10%;
@@ -311,7 +309,7 @@ section.section_3 > div.container {
 }
 
 .wiki_back > a{
-    /* text-decoration: none; */
+    text-decoration: none;
     color: var(--color4);
 }
 
@@ -359,7 +357,6 @@ section.section_3 > div.container {
     width: 33%;
     height: 90%;
     padding: 20px;
-    /* background-color: rgb(246, 204, 204); */
     background-color: var(--color2);
     border: 1px solid;
     border-radius: 5px;
@@ -368,85 +365,84 @@ section.section_3 > div.container {
 
 .wiki_image > .computer_image {
     width: 100%;
-    height: 60%;
-    background-image: url(images/computer.png);
+    min-height: 60%;
+    background-image: url(../static/images/computer.png);
     background-size: cover;
-    /* background-color: red; */
 }
 
 .wiki_image > .cpu_image {
     width: 67%;
     height: 60%;
-    background-image: url(images/cpu.png);
+    background-image: url(../static/images/cpu.png);
 }
 
 .wiki_image > .ram_image {
     width: 67%;
     height: 60%;
-    background-image: url(images/ram.jpg);
+    background-image: url(../static/images/ram.jpg);
 }
 
 .wiki_image > .motherboard_image {
     width: 70%;
     height: 60%;
     background-size: contain;
-    background-image: url(images/motherboard.jpg);
+    background-image: url(../static/images/motherboard.jpg);
 }
 
 .wiki_image > .hdd_image {
     width: 70%;
     height: 60%;
     background-size: contain;
-    background-image: url(images/hdd.jpg);
+    background-image: url(../static/images/hdd.jpg);
 }
 
 .wiki_image > .graphic_image {
     width: 70%;
     height: 60%;
     background-size: contain;
-    background-image: url(images/graphic.jpg);
+    background-image: url(../static/images/graphic.jpg);
 }
 
 .wiki_image > .sound_image {
     width: 70%;
     height: 60%;
     background-size: contain;
-    background-image: url(images/sound.png);
+    background-image: url(../static/images/sound.png);
 }
 
 .wiki_image > .case_image {
     width: 70%;
     height: 60%;
     background-size: contain;
-    background-image: url(images/case.jpg);
+    background-image: url(../static/images/case.jpg);
 }
 
 .wiki_image > .monitor_image {
     width: 70%;
     height: 60%;
     background-size: contain;
-    background-image: url(images/monitor.png);
+    background-image: url(../static/images/monitor.png);
 }
 
 .wiki_image > .mouse_image {
     width: 70%;
     height: 60%;
     background-size: contain;
-    background-image: url(images/mouse.jpg);
+    background-image: url(../static/images/mouse.jpg);
 }
 
 .wiki_image > .keyboard_image {
     width: 70%;
     height: 60%;
     background-size: contain;
-    background-image: url(images/keyboard.jpeg);
+    background-image: url(../static/images/keyboard.jpeg);
 }
 
 .wiki_image > .speaker_image {
     width: 70%;
     height: 60%;
     background-size: contain;
-    background-image: url(images/speaker.jpg);
+    background-image: url(../static/images/speaker.jpg);
 }
 
 .wiki_image_text {
@@ -456,7 +452,7 @@ section.section_3 > div.container {
 /* Quiz Section ----------------------------------------------------------------------------------------------- */
 .quiz-home{
     width: 100vw;
-    min-height: fit-content;
+    min-height: 100vh;
     background-color: var(--color1);
     color: var(--color4);
     display: flex;
@@ -466,19 +462,29 @@ section.section_3 > div.container {
 }
 
 .topics-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 .topic-card {
+    min-width: 280px;
+    min-height: 120px;
     border: 1px solid;
     border-color: var(--color3);
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     background-color: var(--color2);
     transition: 0.2s ease;
+    margin: 10px;
+    display: flex;
+    align-items: center;
 }
 .topic-card:hover {
     transform: translateY(-5px);
+}
+
+.topic-card > div {
+    height: 100%;
 }
