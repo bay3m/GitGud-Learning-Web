@@ -55,7 +55,10 @@
             transition: background 0.3s;
         }
 
-        button:hover { background: #005fa3; }
+        button:hover { 
+            background: #005fa3; 
+        }
+
         #result {
             text-align: center;
             margin-top: 30px;
@@ -68,7 +71,6 @@
     <h2 style="text-align:center; margin: 25px;">Hardware Fundamentals with Behaviorist AI Concepts Quiz</h2>
 
     <div class="quiz-box" id="quiz-box">
-
     
     </div>
 
@@ -97,8 +99,8 @@
                 });
 
                 container.innerHTML = `
-                    <h3>Quiz Completed!</h3>
-                    <p>You scored ${score} out of ${quizData.length}.</p>
+                    <h3 style="margin: 10px;">Quiz Completed!</h3>
+                    <p style="margin: 10px;">You scored ${score} out of ${quizData.length}.</p>
                     <a href="quiz_home.html"><button>Done</button></a>
                 `;
                 return;
@@ -108,8 +110,8 @@
 
             const questionHTML = document.createElement("div");
             questionHTML.innerHTML = `
-                <h4>Question ${current + 1} of ${quizData.length}</h4>
-                <p>${q.question}</p>
+                <h4 style="margin-bottom: 15px;">Question ${current + 1} of ${quizData.length}</h4>
+                <p style="margin: 10px;">${q.question}</p>
                 <div class="options">
                 ${q.options.map(opt => `
                     <label>
