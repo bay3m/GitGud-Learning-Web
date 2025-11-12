@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "question": "What does “Behaviourist AI” focus on?",
+        "options": ["Emotional understanding", "Observable actions and responses", "Internal reasoning", "Symbolic problem-solving"],
+        "answer": "Observable actions and responses"
+    },
+    {
+        "id": 2,
+        "question": "Who were the key figures behind the behaviourist theory in psychology?",
+        "options": ["Sigmund Freud and Carl Jung", "John B. Watson, Ivan Pavlov, and B.F. Skinner", "Alan Turing and John McCarthy", "Abraham Maslow and Carl Rogers"],
+        "answer": "John B. Watson, Ivan Pavlov, and B.F. Skinner"
+    },
+    {
+        "id": 3,
+        "question": "What is the main idea of the behaviourist approach to AI?",
+        "options": ["AI learns through interaction with the environment using rewards and punishments", "AI learns through analyzing emotions", "AI thinks logically like humans", "AI is programmed with pre-set knowledge"],
+        "answer": "AI learns through interaction with the environment using rewards and punishments"
+    },
+    {
+        "id": 4,
+        "question": "How does Behaviourist AI differ from Cognitive AI?",
+        "options": ["Behaviourist AI studies external behavior; Cognitive AI studies internal thought processes", "Both are focused on deep reasoning", "Cognitive AI uses reinforcement while Behaviourist AI uses logic", "Behaviourist AI ignores environmental feedback"],
+        "answer": "Behaviourist AI studies external behavior; Cognitive AI studies internal thought processes"
+    },
+    {
+        "id": 5,
+        "question": "What is “stimulus” and “response” in the context of Behaviourist AI?",
+        "options": ["Stimulus is input from the environment; response is the AI's action based on it", "Stimulus is output; response is internal processing", "Both are types of AI learning models", "Stimulus is reasoning, response is reflection"],
+        "answer": "Stimulus is input from the environment; response is the AI's action based on it"
+    },
+    {
+        "id": 6,
+        "question": "Which of the following best represents a behaviourist learning approach in AI?",
+        "options": ["AI solving math equations using logic trees", "AI learning by receiving rewards for correct actions", "AI imitating human emotions through neural mapping", "AI processing symbols like a calculator"],
+        "answer": "AI learning by receiving rewards for correct actions"
+    },
+    {
+        "id": 7,
+        "question": "What type of learning is most related to Behaviourist AI?",
+        "options": ["Unsupervised learning", "Deep learning", "Reinforcement learning", "Symbolic learning"],
+        "answer": "Reinforcement learning"
+    },
+    {
+        "id": 8,
+        "question": "Reinforcement learning is based on?",
+        "options": ["Supervised labeling", "Rewards and punishments", "Genetic algorithms", "Neural imaging"],
+        "answer": "Rewards and punishments"
+    },
+    {
+        "id": 9,
+        "question": "Pavlov's experiment is an example of?",
+        "options": ["Classical conditioning", "Operant conditioning", "Supervised learning", "Cognitive mapping"],
+        "answer": "Classical conditioning"
+    },
+    {
+        "id": 10,
+        "question": "In behaviorist AI, which concept best describes the process of learning through rewards and punishments?",
+        "options": ["Deep learning", "Reinforcement learning", "Symbolic reasoning", "Genetic algorithms"],
+        "answer": "Reinforcement learning"
+    },
+    {
+        "id": 11,
+        "question": "The \"stimulus-response\" model in behaviorist AI is inspired by?",
+        "options": ["Neural network architecture", "Human logical reasoning", "Psychological theories of learning", "Fuzzy logic principles"],
+        "answer": "Psychological theories of learning"
+    },
+    {
+        "id": 12,
+        "question": "In classical conditioning, what happens when a neutral stimulus is repeatedly paired with a meaningful one?",
+        "options": ["The response weakens over time", "The neutral stimulus triggers the same response", "The subject ignores the neutral stimulus", "The response becomes random"],
+        "answer": "The neutral stimulus triggers the same response"
+    },
+    {
+        "id": 13,
+        "question": "In behaviorist AI, the concept of a “reward function” is used?",
+        "options": ["Predict future states", "Store training data", "Evaluate and guide an agent's actions", "Generate random behaviors"],
+        "answer": "Evaluate and guide an agent's actions"
+    },
+    {
+        "id": 14,
+        "question": "Who is the psychologist most associated with the theory of Operant Conditioning?",
+        "options": ["Ivan Pavlov", "B.F. Skinner", "John Watson", "Noam Chomsky"],
+        "answer": "B.F. Skinner"
+    },
+    {
+        "id": 15,
+        "question": "In Behaviorist AI, what is a \"policy\"?",
+        "options": ["The history of all actions taken", "A mapping from perceived states to actions", "The final reward achieved", "The internal model of the world"],
+        "answer": "A mapping from perceived states to actions"
+    },
+    {
+        "id": 16,
+        "question": "In Classical Conditioning, a previously neutral stimulus that eventually triggers a conditioned response is called the ________.",
+        "options": ["Unconditioned Stimulus", "Unconditioned Response", "Conditioned Stimulus", "Conditioned Response"],
+        "answer": "Conditioned Stimulus"
+    },
+    {
+        "id": 17,
+        "question": "In Reinforcement Learning (RL), what is the agent's ultimate goal?",
+        "options": ["To build a perfect model of its environment", "To explore every possible state", "To maximize the cumulative reward it receives over time", "To avoid all negative rewards"],
+        "answer": "To maximize the cumulative reward it receives over time"
+    },
+    {
+        "id": 18,
+        "question": "What is the fundamental trade-off in RL that an agent must balance?",
+        "options": ["Speed vs. Accuracy", "Exploration vs. Exploitation", "Memory vs. Processing Power", "Cost vs. Benefit"],
+        "answer": "Exploration vs. Exploitation"
+    },
+    {
+        "id": 19,
+        "question": "A recommendation algorithm on a streaming service suggests shows you might like. When you watch one, it suggests more like it. This is a real-world example of which Behaviorist concept?",
+        "options": ["Extinction", "Positive Reinforcement", "Spontaneous Recovery", "Negative Punishment"],
+        "answer": "Positive Reinforcement"
+    },
+    {
+        "id": 20,
+        "question": "Which of the following is a known limitation of the pure Behaviorist approach?",
+        "options": ["It requires too much computational power.", "It ignores internal cognitive processes like planning and memory.", "It is only applicable to robot dogs.", "It cannot handle positive reinforcement."],
+        "answer": "It ignores internal cognitive processes like planning and memory."
+    }
+]

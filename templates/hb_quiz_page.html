@@ -79,23 +79,15 @@
         let current = 0;
         let userAnswers = {};
 
-        fetch("../data/hfwbac_quiz.json")
-        .then(res => res.json())
-        .then(data => {
-            quizData = data;
-            renderQuestion();
-        })
-        .catch(err => console.error("Error loading quiz:", err));
-
-        function renderQuestion() {
-            const container = document.getElementById("quiz-box");
+        function renderQuestion(){
+            const container = document.getElementById('quiz-box');
             container.innerHTML = "";
 
-            if (current >= quizData.length) {
+            if(current >= quizData.length){
                 let score = 0;
                 quizData.forEach(q => {
-                    if (userAnswers[q.id] === q.answer) score++;
-                });
+                    if(userAnswers[q.id] === q.answer) score++;
+                })
 
                 container.innerHTML = `
                     <h3 style="margin: 10px;">Quiz Completed!</h3>
@@ -107,7 +99,7 @@
 
             const q = quizData[current];
 
-            const questionHTML = document.createElement("div");
+            const questionHTML = document.createElement('div');
             questionHTML.innerHTML = `
                 <h4 style="margin-bottom: 15px;">Question ${current + 1} of ${quizData.length}</h4>
                 <p style="margin: 10px;">${q.question}</p>
@@ -144,6 +136,13 @@
             renderQuestion();
         };
 
+        fetch('../data/hb_quiz.json')
+        .then(res => res.json())
+        .then(data => {
+            quizData = data;
+            renderQuestion();
+        })
+        .catch(err => console.error("Error loading quiz:", err));
     </script>
 </body>
 </html>

@@ -3,70 +3,60 @@
         "id": 1,
         "question": "Which component is responsible for performing calculations and executing instructions in a computer?",
         "options": ["Hard Drive", "RAM", "CPU", "GPU"],
-        "answer": "CPU",
-        "topic": "Hardware"
+        "answer": "CPU"
     },
     {
         "id": 2,
         "question": "What is the main function of the motherboard?",
         "options": ["Store data permanently", "Connect and allow communication between all components", "Display graphics on the screen", "Increase computer speed automatically"],
-        "answer": "Connect and allow communication between all components",
-        "topic": "Hardware"
+        "answer": "Connect and allow communication between all components"
     },
     {
         "id": 3,
         "question": "Which type of memory loses its data when the power is turned off?",
         "options": ["ROM", "Flash Memory", "SSD", "RAM"],
-        "answer": "RAM",
-        "topic": "Hardware"
+        "answer": "RAM"
     },
     {
         "id": 4,
         "question": "What is the main advantage of an SSD over an HDD?",
         "options": ["Larger storage capacity", "Faster read/write speeds", "Longer lifespan", "Lower cost"],
-        "answer": "Faster read/write speeds",
-        "topic": "Hardware"
+        "answer": "Faster read/write speeds"
     },
     {
         "id": 5,
         "question": "Which of the following devices is considered an input device?",
         "options": ["Monitor", "Speaker", "Keyboard", "Printer"],
-        "answer": "Keyboard",
-        "topic": "Hardware"
+        "answer": "Keyboard"
     },
     {
         "id": 6,
         "question": "In behaviorist AI, which concept best describes the process of learning through rewards and punishments?",
         "options": ["Deep learning", "Reinforcement learning", "Symbolic reasoning", "Genetic algorithms"],
-        "answer": "Reinforcement learning",
-        "topic": "Behaviorist AI"
+        "answer": "Reinforcement learning"
     },
     {
         "id": 7,
         "question": "The 'stimulus-response' model in behaviorist AI is inspired by:",
         "options": ["Neural network architecture", "Human logical reasoning", "Psychological theories of learning", "Fuzzy logic principles"],
-        "answer": "Psychological theories of learning",
-        "topic": "Behaviorist AI"
+        "answer": "Psychological theories of learning"
     },
     {
         "id": 8,
         "question": "In classical conditioning, what happens when a neutral stimulus is repeatedly paired with a meaningful one?",
         "options": ["The response weakens over time", "The neutral stimulus triggers the same response", "The subject ignores the neutral stimulus", "The response becomes random"],
-        "answer": "The neutral stimulus triggers the same response",
-        "topic": "Behaviorist AI"
+        "answer": "The neutral stimulus triggers the same response"
     },
     {
         "id": 9,
         "question": "Which hardware component is most crucial for improving performance in AI model training?",
         "options": ["CPU", "GPU", "SSD", "Power Supply"],
-        "answer": "GPU",
-        "topic": "Hardware"
+        "answer": "GPU"
     },
     {
         "id": 10,
         "question": "In behaviorist AI, the concept of a 'reward function' is used to:",
         "options": ["Predict future states", "Store training data", "Evaluate and guide an agent's actions", "Generate random behaviors"],
-        "answer": "Evaluate and guide an agent's actions",
-        "topic": "Behaviorist AI"
+        "answer": "Evaluate and guide an agent's actions"
     }
 ]

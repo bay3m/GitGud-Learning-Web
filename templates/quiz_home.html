@@ -25,6 +25,19 @@
                 "topic" : "hardware fundamentals with behaviorist AI concepts",
                 "link" : "hfwbac_quiz_page.html",
                 "total_questions" : 10,
+                "difficulty" : "easy",
+            },
+            {
+                "topic" : "behaviorist AI integration",
+                "link" : "bai_quiz_page.html",
+                "total_questions" : 20,
+                "difficulty" : "medium",
+            },
+            {
+                "topic" : "hardware basics",
+                "link" : "hb_quiz_page.html",
+                "total_questions" : 12,
+                "difficulty" : "easy",
             },
         ];
         document.addEventListener('DOMContentLoaded', () => {
@@ -34,19 +47,17 @@
             quiz_topics.forEach((item) => {
                 const div = document.createElement('div');
                 div.className = `topic-card`;
-                // console.log(topic);
 
                 div.innerHTML = `
                     <div>
                         <h6>${ item.topic }</h6>
 
                         <p>Total Questions: ${ item.total_questions }</p>
+
+                        <p style="font-size: 17px;">Difficulty: <span style="color: ${ item.difficulty == "easy" ? "green" : item.difficulty == "hard" ? "red" : "orange"}; font-size: 18px;">${ item.difficulty }</span></p>
                     </div>
                     <a href="${ item.link }" class="btn btn-primary">Start Quiz</a>
                 `;
-
-                // console.log(div);
-                // console.log(quiz_topics_container);
                 quiz_topics_container.appendChild(div);
             });
         });

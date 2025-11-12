@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "question": "What is the main function of the motherboard?",
+        "options": ["Store data permanently", "Connect and allow communication between all components", "Display graphics on the screen", "Increase computer speed automatically"],
+        "answer": "Connect and allow communication between all components"
+    },
+    {
+        "id": 2,
+        "question": "Which type of memory loses its data when the power is turned off?",
+        "options": ["ROM", "Flash Memory", "SSD", "RAM"],
+        "answer": "RAM"
+    },
+    {
+        "id": 3,
+        "question": "What is the main advantage of an SSD over an HDD?",
+        "options": ["Larger storage capacity", "Faster read/write speeds", "Longer lifespan", "Lower cost"],
+        "answer": "Faster read/write speeds"
+    },
+    {
+        "id": 4,
+        "question": "Which of the following devices is considered an input device?",
+        "options": ["Monitor", "Speaker", "Keyboard", "Printer"],
+        "answer": "Keyboard"
+    },
+    {
+        "id": 5,
+        "question": "Which hardware component is most crucial for improving performance in AI model training?",
+        "options": ["CPU", "GPU", "SSD", "Power Supply"],
+        "answer": ""
+    },
+    {
+        "id": 6,
+        "question": "What is the primary function of the CPU (Central Processing Unit)?",
+        "options": ["Store data permanently", "Execute program instructions", "Provide power to the motherboard", "Display graphics on the monitor"],
+        "answer": "Execute program instructions"
+    },
+    {
+        "id": 7,
+        "question": "Which component acts as the primary communication backbone, allowing the CPU, RAM, and other hardware to interact?",
+        "options": ["Power Supply Unit (PSU)", "Solid-State Drive (SSD)", "Motherboard", "Heat Sink"],
+        "answer": "Motherboard"
+    },
+    {
+        "id": 8,
+        "question": "Which storage device typically has faster read/write speeds, leading to quicker system boot times?",
+        "options": ["Hard Disk Drive (HDD)", "Solid-State Drive (SSD)", "Optical Drive (DVD)", "USB 2.0 Flash Drive"],
+        "answer": "Solid-State Drive (SSD)"
+    },
+    {
+        "id": 9,
+        "question": "A mouse, keyboard, and microphone are all examples of ________ devices.",
+        "options": ["Output", "Processing", "Input", "Storage"],
+        "answer": "Input"
+    },
+    {
+        "id": 10,
+        "question": "Which port is commonly used for high-speed data transfer for external storage devices and is recognizable by its reversible connector?",
+        "options": ["USB-C", "VGA", "Ethernet", "HDMI"],
+        "answer": "USB-C"
+    },
+    {
+        "id": 11,
+        "question": "What component cools the CPU to prevent it from overheating?",
+        "options": ["RAM", "Power Supply", "Heat Sink and Fan", "Sound Card"],
+        "answer": "Heat Sink and Fan"
+    },
+    {
+        "id": 12,
+        "question": "Which component is responsible for performing calculations and executing instructions in a computer?",
+        "options": ["Hard Drive", "CPU", "GPU", "RAM"],
+        "answer": "CPU"
+    }
+]

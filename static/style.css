@@ -488,4 +488,5 @@ section.section_3 > div.container {
 
 .topic-card > div {
     height: 100%;
+    padding-right: 15px;
 }
