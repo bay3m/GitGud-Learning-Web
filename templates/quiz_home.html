@@ -8,11 +8,11 @@
     <title>Document</title>
 </head>
 <div class="quiz-home">
-    <div style="display: flex; width: 100%;">
+    <div style="display: flex; width: 100%; align-items: center;">
         <div class="wiki_back" style="margin-right: 10px;">
             <a href="../index.html">←</a>
         </div>
-        <h2>Select a Quiz Topic</h2>
+        <h2 style="margin: 0;">Select a Quiz Topic</h2>
     </div>
     <div class="border" style="width: 100%; margin-top: 5px;"></div>
     <div class="topics-grid">
@@ -50,7 +50,7 @@
 
                 div.innerHTML = `
                     <div>
-                        <h6>${ item.topic }</h6>
+                        <h6 style="text-transform: capitalize;">${ item.topic }</h6>
 
                         <p>Total Questions: ${ item.total_questions }</p>
 
