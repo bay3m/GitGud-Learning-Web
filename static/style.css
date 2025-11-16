@@ -16,7 +16,6 @@
     padding: 0;
     scroll-behavior: smooth;
     user-select: none;
-    /* overflow-y: hidden; */
 }
 
 ::-webkit-scrollbar {
@@ -25,7 +24,6 @@
 
 #carouselExampleControls img {
     height: 50vh;
-    /* width: 100%; */
     object-fit: cover;
     border-radius: 15px;
 }
@@ -53,7 +51,6 @@
 div.carousel_item{
     width: 60%;
     height: 90%;
-    /* background-color: rgb(246, 204, 204); */
     background-color: var(--color2);
     margin: auto; 
     display: flex; 
@@ -72,7 +69,6 @@ div.carousel_item{
 
 .img_source_link {
     color: var(--color4);
-    /* text-decoration: none; */
 }
 
 /* Section 1 ----------------------------------------------------------------------------------------------- */
@@ -83,17 +79,14 @@ div.carousel_item{
     width: 100%;
     background-color: var(--color1);
     color: white;
-    /* text-decoration: none; */
 }
 
 .main-header {
     margin-top: 30px;
     position: sticky;
-    /* top: 0; */
     z-index: 1050;
 }
 
-/* Navbar links */
 .navbar-nav .nav-link {
     color: #002b5c;
     font-weight: 500;
@@ -103,21 +96,18 @@ div.carousel_item{
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    color: #e63946; /* highlight color */
+    color: #e63946;
 }
 
-/* Logo text spacing */
 .navbar-brand span {
     font-size: 1rem;
     letter-spacing: 0.5px;
 }
 
-/* Mobile menu background fix */
 .navbar-collapse {
     background-color: white;
 }
 
-/* Optional shadow */
 .navbar {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
@@ -130,36 +120,6 @@ a.learn_more {
     font-weight: bold;
     margin-top: 80px;
 }
-
-/* .tooltip {
-    position: relative;
-    display: inline-block;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 140px;
-    background-color: black;
-    color: var(--color4);
-    text-align: center;
-    border-radius: 10px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    top: 125%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transform: opacity 5s;
-    font-size: 15px;
-    font-weight: lighter;
-    border: 1px solid white;
-} */
-
-/* .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-} */
 
 div.border {
     width: 100vw;
@@ -497,7 +457,6 @@ body {
     background: var(--color1);
     font-family: Arial, sans-serif;
     color: var(--color4);
-    padding: 40px;
 }
 
 .quiz-box {
