@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "question": "TCP uses a three-way handshake process to establish a connection between devices.",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "id": 2,
+        "question": "A router operates at the Transport Layer of the OSI model.",
+        "options": ["True", "False"],
+        "answer": "False"
+    },
+    {
+        "id": 3,
+        "question": "IPv6 addresses are 128 bits long, while IPv4 addresses are 32 bits long.",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "id": 4,
+        "question": "DNS is responsible for translating domain names to IP addresses.",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "id": 5,
+        "question": "HTTP uses port 80 by default, while HTTPS uses port 443.",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "id": 6,
+        "question": "A switch broadcasts data to all devices on the network, similar to a hub.",
+        "options": ["True", "False"],
+        "answer": "False"
+    },
+    {
+        "id": 7,
+        "question": "The subnet mask 255.255.255.0 in CIDR notation is /24.",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "id": 8,
+        "question": "UDP provides reliable, ordered delivery of data packets.",
+        "options": ["True", "False"],
+        "answer": "False"
+    },
+    {
+        "id": 9,
+        "question": "A firewall can operate at both the network and application layers.",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "id": 10,
+        "question": "The maximum length of a standard Ethernet cable is 100 meters.",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "id": 11,
+        "question": "Wi-Fi 6 (802.11ax) operates only on the 2.4 GHz frequency band.",
+        "options": ["True", "False"],
+        "answer": "False"
+    },
+    {
+        "id": 12,
+        "question": "NAT (Network Address Translation) allows multiple devices to share a single public IP address.",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "id": 13,
+        "question": "The Physical layer of the OSI model is responsible for data encryption and decryption.",
+        "options": ["True", "False"],
+        "answer": "False"
+    }
+]

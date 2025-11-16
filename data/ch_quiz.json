@@ -1,0 +1,104 @@
+[
+    {
+        "id": 1,
+        "question": "What is the primary purpose of the CPU's control unit?",
+        "options": ["To perform arithmetic and logical calculations","To manage and coordinate the operations of the CPU","To provide temporary storage for frequently accessed data","To convert AC power from the wall outlet to DC power for the computer"],
+        "answer": "To manage and coordinate the operations of the CPU"
+    },
+    {
+        "id": 2,
+        "question": "Which type of RAM is faster and more efficient than traditional SDRAM because it can process multiple data transfers per clock cycle?",
+        "options": ["DDR SDRAM","RDRAM","SRAM","VRAM"],
+        "answer": "DDR SDRAM"
+    },
+    {
+        "id": 3,
+        "question": "Which component is responsible for storing the BIOS/UEFI firmware?",
+        "options": ["The Southbridge chip","The CMOS battery","A flash memory chip on the motherboard","The CPU cache"],
+        "answer": "A flash memory chip on the motherboard"
+    },
+    {
+        "id": 4,
+        "question": "What is the main advantage of an NVMe M.2 SSD over a SATA III SSD?",
+        "options": ["It has a larger physical storage capacity","It consumes significantly less power","It uses the PCIe bus for much higher data transfer speeds","It is more reliable and has a longer lifespan"],
+        "answer": "It uses the PCIe bus for much higher data transfer speeds"
+    },
+    {
+        "id": 5,
+        "question": "In the context of multi-core processors, what does Hyper-Threading technology allow a single physical CPU core to do?",
+        "options": ["Increase its clock speed dynamically","Execute instructions from two different threads simultaneously","Communicate directly with the GPU","Operate without a heatsink"],
+        "answer": "Execute instructions from two different threads simultaneously"
+    },
+    {
+        "id": 6,
+        "question": "Which power supply connector is a 24-pin block and is the primary source of power for the motherboard itself?",
+        "options": ["PCIe Connector","SATA Power Connector","ATX Main Power Connector","4/8-pin EPS12V Connector"],
+        "answer": "ATX Main Power Connector"
+    },
+    {
+        "id": 7,
+        "question": "What is the primary function of a computer's chipset, typically divided into Northbridge and Southbridge?",
+        "options": ["To execute all program instructions","To manage data flow between the CPU, memory, and peripherals","To provide cooling for the CPU and GPU","To store the operating system"],
+        "answer": "To manage data flow between the CPU, memory, and peripherals"
+    },
+    {
+        "id": 8,
+        "question": "If a computer fails to boot and emits a series of short beeps, what component is most likely being flagged by the POST (Power-On Self-Test)?",
+        "options": ["The hard drive is not detected","There is a RAM failure","The monitor is not connected","The keyboard is missing"],
+        "answer": "There is a RAM failure"
+    },
+    {
+        "id": 9,
+        "question": "Which cache memory level is typically the largest but also the slowest among L1, L2, and L3 caches in a modern CPU?",
+        "options": ["L1 Cache","L2 Cache","L3 Cache","They are all the same speed"],
+        "answer": "L3 Cache"
+    },
+    {
+        "id": 10,
+        "question": "What is the primary role of a GPU (Graphics Processing Unit) beyond rendering graphics for display?",
+        "options": ["To manage the computer's network traffic","To replace the CPU for all computational tasks","To handle parallel processing tasks efficiently (e.g., video editing, machine learning)","To provide permanent storage for the operating system"],
+        "answer": "To handle parallel processing tasks efficiently (e.g., video editing, machine learning)"
+    },
+    {
+        "id": 11,
+        "question": "Which RAID (Redundant Array of Independent Disks) level provides both data striping and parity for fault tolerance, requiring a minimum of three drives?",
+        "options": ["RAID 0","RAID 1","RAID 5","RAID 10"],
+        "answer": "RAID 5"
+    },
+    {
+        "id": 12,
+        "question": "What is the fundamental difference between a hardware-based SSD and an NVMe protocol?",
+        "options": ["NVMe is a type of physical connector, while SSD is a storage medium.","An SSD is the physical storage device, while NVMe is a communication interface/protocol designed for faster access to flash memory.","They are the same thing, just different names.","SSD uses magnetic platters, while NVMe uses flash memory."],
+        "answer": "An SSD is the physical storage device, while NVMe is a communication interface/protocol designed for faster access to flash memory."
+    },
+    {
+        "id": 13,
+        "question": "Which component on the motherboard is responsible for generating and synchronizing the clock signal that dictates the speed of CPU operations?",
+        "options": ["The BIOS Chip","The Crystal Oscillator","The CMOS Battery","The Voltage Regulator Module (VRM)"],
+        "answer": "The Crystal Oscillator"
+    },
+    {
+        "id": 14,
+        "question": "What is the main consequence of installing a power supply unit (PSU) with a wattage rating that is too low for the computer's components?",
+        "options": ["The computer will boot but will not connect to the internet.","The computer may experience random shutdowns, instability, or failure to power on.","The monitor resolution will be permanently reduced.","The CPU will automatically overclock to compensate."],
+        "answer": "The computer may experience random shutdowns, instability, or failure to power on."
+    },
+    {
+        "id": 15,
+        "question": "When discussing monitor specifications, what does the term 'response time' primarily refer to?",
+        "options": ["How quickly the monitor can receive a signal from the computer.","The time it takes for a pixel to change from one color to another, affecting motion clarity.","The delay between a key press and its appearance on the screen.","How long the monitor takes to turn on from a powered-off state."],
+        "answer": "The time it takes for a pixel to change from one color to another, affecting motion clarity."
+    },
+    {
+        "id": 16,
+        "question": "In a multi-core processor system, what is the role of the operating system's 'scheduler'?",
+        "options": ["To manage the power supply to each core.","To decide which software threads run on which CPU core and for how long.","To schedule hardware maintenance tasks.","To control the fan speeds for cooling the CPU."],
+        "answer": "To decide which software threads run on which CPU core and for how long."
+    },
+    {
+        "id": 17,
+        "question": "What is the primary technical reason liquid cooling can be more effective than air cooling for high-performance CPUs?",
+        "options": ["Liquid is naturally colder than air.","Liquid cooling systems are always quieter.","Water has a higher heat capacity than air, allowing it to absorb more thermal energy before increasing in temperature.","Liquid cooling doesn't require any fans."],
+        "answer": "Water has a higher heat capacity than air, allowing it to absorb more thermal energy before increasing in temperature."
+    }
+]

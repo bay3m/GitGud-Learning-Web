@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Behavioural Core RPG</title>
+    <style>
+        body {
+            background: #0b0f19;
+            color: #e0e6ff;
+            font-family: "Trebuchet MS", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #gameBox {
+            width: 90%;
+            max-width: 700px;
+            background: #141a2a;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px #3c4a7a;
+        }
+
+        button {
+            background: #3c4fdd;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px 0;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #5265ff;
+        }
+
+        #output {
+            white-space: pre-line;
+            margin-bottom: 10px;
+            min-height: 150px;
+        }
+
+        #nameInput {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let player = {
+            name: "",
+            class: "",
+            level: 1,
+            xp: 0,
+            zone: "Silicon Plains"
+        };
+
+        const LEVEL_REQ = {1:0,2:100,3:300,4:600,5:1000};
+
+        const QUESTS = {
+            "Silicon Plains": [
+                ["Inspect the CPU Castle", 20],
+                ["Clean the Cache Fields", 20],
+                ["Defeat the Lag Slime", 15]
+            ],
+            "Conditioning Forest": [
+                ["Train the Reward Node", 25],
+                ["Explain operant conditioning", 30],
+                ["Defeat the Bias Wraith", 35]
+            ]
+        };
+
+        function setName() {
+            const name = document.getElementById("nameInput").value;
+            if (!name) return;
+
+            player.name = name;
+            showClassSelection();
+        }
+
+        function showClassSelection() {
+            document.getElementById("gameBox").innerHTML = `
+                <div id='output'>Hello <b>${player.name}</b>! Choose your class:</div>
+                <button onclick="chooseClass('Circuit Warrior')">⚔️ Circuit Warrior</button>
+                <button onclick="chooseClass('Reinforcement Mage')">🔮 Reinforcement Mage</button>
+                <button onclick="chooseClass('Hybrid Engineer')">🛠 Hybrid Engineer</button>
+            `;
+        }
+
+        function chooseClass(cls) {
+            player.class = cls;
+            mainMenu();
+        }
+
+        function mainMenu() {
+            document.getElementById("gameBox").innerHTML = `
+                <div id='output'>
+                    <b>${player.name}</b> the <b>${player.class}</b>
+                    <br>
+                    Zone: ${player.zone}
+                    <br>
+                    Level: ${player.level} | XP: ${player.xp}
+                    <br>
+                    <br>
+                    What will you do?
+                </div>
+                <button onclick="questMenu()">📜 Take a Quest</button>
+                <button onclick="travelMenu()">🗺️ Travel Zones</button>
+            `;
+        }
+
+        function questMenu() {
+            let qlist = QUESTS[player.zone] || [];
+
+            let html = `<div id='output'>Quests in <b>${player.zone}</b>:</div>`;
+
+            qlist.forEach((q, i) => {
+                html += `<button onclick="completeQuest(${i})">${q[0]} (${q[1]} XP)</button>`;
+            });
+
+            html += `<button onclick="mainMenu()">⬅️ Back</button>`;
+
+            document.getElementById("gameBox").innerHTML = html;
+        }
+
+        function completeQuest(i) {
+            let quest = QUESTS[player.zone][i];
+            let xp = quest[1];
+            let bonus = 0;
+
+            if (player.class === "Circuit Warrior" && quest[0].includes("CPU")) bonus = 10;
+            if (player.class === "Reinforcement Mage" && quest[0].includes("Reward")) bonus = 10;
+
+            let total = xp + bonus;
+            player.xp += total;
+
+            checkLevelUp();
+
+            document.getElementById("gameBox").innerHTML = `
+                <div id='output'>
+                    Quest completed!
+                    <br>
+                    You earned <b>${total} XP</b>!
+                </div>
+                <button onclick="mainMenu()">Continue</button>
+            `;
+        }
+
+        function checkLevelUp() {
+            let next = player.level + 1;
+            if (LEVEL_REQ[next] && player.xp >= LEVEL_REQ[next]) {
+                player.level++;
+                alert(`🎉 LEVEL UP! You are now Level ${player.level}!`);
+            }
+        }
+
+        function travelMenu() {
+            document.getElementById("gameBox").innerHTML = `
+                <div id='output'>Choose a zone:</div>
+                <button onclick="travel('Silicon Plains')">Silicon Plains</button>
+                <button onclick="travel('Conditioning Forest')">Conditioning Forest</button>
+                <button onclick="mainMenu()">⬅️ Back</button>
+            `;
+        }
+
+        function travel(zone) {
+            player.zone = zone;
+            mainMenu();
+        }
+    </script>
+
+    <div id="gameBox">
+        <div id="output">Welcome to <b>Chronicles of the Behavioural Core</b>!<br>Enter your name to begin.</div>
+        <input id="nameInput" placeholder="Your name..." />
+        <button onclick="setName()">Start</button>
+    </div>
+</body>
+</html>

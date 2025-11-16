@@ -418,7 +418,7 @@ section.section_3 > div.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4% 10%;
+    padding: 4% 6%;
 }
 
 .topics-grid {

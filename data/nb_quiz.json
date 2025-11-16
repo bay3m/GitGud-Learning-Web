@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "question": "Which device is primarily used to connect multiple networks together?",
+        "options": ["Switch", "Hub", "Router", "Modem"],
+        "answer": "Router"
+    },
+    {
+        "id": 2,
+        "question": "What does 'IP' in IP address stand for?",
+        "options": ["Internet Provider", "Internal Protocol", "Internet Protocol", "Interconnected Path"],
+        "answer": "Internet Protocol"
+    },
+    {
+        "id": 3,
+        "question": "Which layer of the OSI model is responsible for end-to-end communication?",
+        "options": ["Transport Layer", "Network Layer", "Session Layer", "Physical Layer"],
+        "answer": "Transport Layer"
+    },
+    {
+        "id": 4,
+        "question": "What type of network topology has all devices connected to a single central cable?",
+        "options": ["Ring", "Star", "Bus", "Mesh"],
+        "answer": "Bus"
+    },
+    {
+        "id": 5,
+        "question": "Which protocol is used to securely access a remote computer over the internet?",
+        "options": ["SSH", "FTP", "HTTP", "SMTP"],
+        "answer": "SSH"
+    },
+    {
+        "id": 6,
+        "question": "What does the 'ping' command do?",
+        "options": ["Tests network latency", "Installs network drivers", "Configures routers", "Displays available WiFi networks"],
+        "answer": "Tests network latency"
+    },
+    {
+        "id": 7,
+        "question": "Which of the following is a private IP address?",
+        "options": ["192.168.1.1", "172.16.0.1", "10.0.0.1", "All of the above"],
+        "answer": "All of the above"
+    },
+    {
+        "id": 8,
+        "question": "What is the primary purpose of DNS in networking?",
+        "options": ["Assigning local IP addresses", "Translating domain names to IP addresses", "Routing packets between networks", "Encrypting data"],
+        "answer": "Translating domain names to IP addresses"
+    },
+    {
+        "id": 9,
+        "question": "Which network device operates at Layer 2 of the OSI model?",
+        "options": ["Router", "Switch", "Firewall", "Repeater"],
+        "answer": "Switch"
+    },
+    {
+        "id": 10,
+        "question": "What type of cable is commonly used for Ethernet connections?",
+        "options": ["Coaxial", "Fiber Optic", "Twisted Pair", "HDMI"],
+        "answer": "Twisted Pair"
+    },
+    {
+        "id": 11,
+        "question": "Which protocol is used to automatically assign IP addresses on a network?",
+        "options": ["TCP", "DHCP", "ARP", "UDP"],
+        "answer": "DHCP"
+    },
+    {
+        "id": 12,
+        "question": "What is the maximum number of hosts that can be addressed in a /24 subnet?",
+        "options": ["254", "256", "512", "1024"],
+        "answer": "254"
+    },
+    {
+        "id": 13,
+        "question": "What is the main advantage of using a mesh network topology?",
+        "options": ["Cheaper to install", "Simplifies cabling", "Provides multiple paths for data", "Uses less power"],
+        "answer": "Provides multiple paths for data"
+    },
+    {
+        "id": 14,
+        "question": "Which of the following best describes a firewall?",
+        "options": ["Device that boosts WiFi signal", "Software or hardware that filters network traffic", "Device that connects networks", "Tool that compresses data"],
+        "answer": "Software or hardware that filters network traffic"
+    },
+    {
+        "id": 15,
+        "question": "In IPv6, how many bits are used for an IP address?",
+        "options": ["32 bits", "64 bits", "128 bits", "256 bits"],
+        "answer": "128 bits"
+    }
+]

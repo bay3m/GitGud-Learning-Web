@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "question": "Which of the following best describes a CPU pipeline?",
+        "options": ["Multiple CPUs working in parallel.","A sequence of stages through which instructions pass during execution.","The process of updating firmware.","A method of storing instructions in cache memory."],
+        "answer": "A sequence of stages through which instructions pass during execution."
+    },
+    {
+        "id": 2,
+        "question": "In regards to multi-threading, what does SMT (Simultaneous Multi-Threading) allow a CPU core to do?",
+        "options": ["Increase transistor density","Execute multiple threads within a single CPU core simultaneously","Store more cache","Handle only one thread at a time"],
+        "answer": "Execute multiple threads within a single CPU core simultaneously"
+    },
+    {
+        "id": 3,
+        "question": "In hybrid storage systems, which technology is typically used to manage frequently accessed data for faster performance?",
+        "options": ["Cache Memory","Write Amplification","S.M.A.R.T.","Storage Tiering"],
+        "answer": "Storage Tiering"
+    },
+    {
+        "id": 4,
+        "question": "What is the primary advantage of using a UEFI firmware over BIOS?",
+        "options": ["It supports 32-bit systems only","It boots faster and supports larger drive sizes","It uses legacy MBR partitioning exclusively","It does not require Secure Boot"],
+        "answer": "It boots faster and supports larger drive sizes"
+    },
+    {
+        "id": 5,
+        "question": "Which memory type uses a charge stored in a capacitor to represent a bit?",
+        "options": ["SRAM","DRAM","VRAM","ROM"],
+        "answer": "DRAM"
+    },
+    {
+        "id": 6,
+        "question": "Which technique allows a CPU to guess the direction of a branch instruction to improve performance?",
+        "options": ["Memory Paging","Branch Prediction","Instruction Pipelining","Out-of-Order Execution"],
+        "answer": "Branch Prediction"
+    },
+    {
+        "id": 7,
+        "question": "A PCIe 4.0 x16 slot provides approximately what peak bandwidth?",
+        "options": ["64 GB/s","32 GB/s","16 GB/s","8 GB/s"],
+        "answer": "32 GB/s"
+    }
+]
